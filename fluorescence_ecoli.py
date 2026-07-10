@@ -135,8 +135,8 @@ label = ax.text(
 def update(i):
     im.set_data(make_frame(i))
 
-    title.set_text(f"E. coli GreenPegasos Response | {time[i]} min")
-    label.set_text(f"Fluorescence: {F[i]:.2f} AU")
+    title.set_text(f"{time[i]} min")
+    label.set_text(f"Fluorescence: {F[i]:.2f} ")
 
     return im, title, label
 
