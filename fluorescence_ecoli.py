@@ -12,10 +12,10 @@ np.random.seed(3)
 # -------------------------
 # Simulated fluorescence
 # -------------------------
-time = np.arange(0, 31, 1)  # 0–30 min
+time = np.arange(0, 40, 1)  # 0–30 min
 
 # Example fluorescence response curve
-F = 0.1 + 2.2 * (1 - np.exp(-time / 10))
+F = 2.0 * np.abs(np.sin(2 * np.pi * time / 20))
 
 # Normalize to 0–1
 brightness = (F - F.min()) / (F.max() - F.min())
